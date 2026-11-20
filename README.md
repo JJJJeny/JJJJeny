@@ -1,4 +1,4 @@
-# Hi, I'm Jenny Yang
+# Hi, I'm Jenny Yang 😊
 
 **Technical product management · Agentic AI · Evaluation**
 
