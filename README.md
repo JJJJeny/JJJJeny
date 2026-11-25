@@ -1,10 +1,8 @@
 # Hi, I'm Jenny Yang 😊
 
-**Technical product management · Agentic AI · Evaluation**
+I build and evaluate AI agents, with a focus on security and user experience.
 
-I'm completing my M.S. in Information Science at UT Austin, graduating in May 2027. Previously, I was a PM intern at Cloudflare, where I helped bring [Certificate Transparency Monitoring from public beta to general availability](https://blog.cloudflare.com/certificate-transparency-monitoring-ga/) across 650K+ customer domains.
-
-I use customer research and data to decide what to build, then prototype and test it. Right now, I'm building agent workflows and studying how to evaluate their behavior, reliability, and failure modes.
+Previously a PM intern at [Cloudflare](https://blog.cloudflare.com/certificate-transparency-monitoring-ga/), helping ship Certificate Transparency Monitoring to GA across 650K+ domains. M.S. Information Science at UT Austin · May 2027.
 
 [Portfolio](https://jjjjeny.github.io/) · [LinkedIn](https://www.linkedin.com/in/jenny-y/) · [Email](mailto:yungching68@gmail.com)
 
@@ -14,28 +12,26 @@ I use customer research and data to decide what to build, then prototype and tes
 
 *Agentic AI · Team coursework*
 
-Co-built an agent that reviews vendor service agreements for small businesses, quotes supporting clauses, and proposes revisions. On 11 held-out contracts, the agent loop scored 70% verdict accuracy versus 50% for the RAG baseline; we also measured false alarms, missed risks, and cost.
+Co-built an agent that checks vendor contracts against a risk rubric, cites clauses, and suggests revisions. Evaluated on 11 held-out contracts: **70% verdict accuracy vs. 50% for the RAG baseline**, with false alarms, missed risks, and cost tracked separately.
 
-[Code, demo instructions & evaluation](https://github.com/JJJJeny/contract-review-agent#results-at-a-glance)
+[Demo setup](https://github.com/JJJJeny/contract-review-agent#run-the-demo) · [Architecture](https://github.com/JJJJeny/JJJJeny/blob/main/projects/contract-review-agent.md) · [Evaluation](https://github.com/JJJJeny/contract-review-agent#results-at-a-glance) · [Code](https://github.com/JJJJeny/contract-review-agent)
 
 ### [Agentic Skill Unlearning](https://jjjjeny.github.io/projects/agentic-unlearning/)
 
 *AI evaluation · Research at UT Austin · Preliminary results*
 
-Investigating whether a coding agent forgets a learned skill after its conversation, skill files, outputs, and runtime history are removed. We inspect model requests as well as task behavior: clearing the measured inputs did not, by itself, establish that the agent had forgotten.
+Testing whether a coding agent forgets a skill after its stored context is removed. Captured model requests and compared task behavior: **clearing the measured inputs did not establish behavioral forgetting**. This is runtime-context removal, not model-weight unlearning.
 
-[Research question, architecture & findings](https://jjjjeny.github.io/projects/agentic-unlearning/)
+[Study walkthrough](https://jjjjeny.github.io/projects/agentic-unlearning/) · [Architecture](https://jjjjeny.github.io/projects/agentic-unlearning/#method) · [Findings & limitations](https://jjjjeny.github.io/projects/agentic-unlearning/#input-result)
 
 ### [Security Findings → Splunk](https://github.com/JJJJeny/security-findings-to-splunk)
 
 *Security integration · PM assessment prototype*
 
-Built a pipeline that validates forensic findings, maps them to Splunk's Common Information Model, and delivers them through its HTTP Event Collector. In a live Splunk Cloud trial, 199 of 200 sample findings arrived and one was quarantined; saved searches support analyst triage.
+Built a pipeline to validate forensic findings, map fields to Splunk's Common Information Model, and send events through HTTP Event Collector. In a Splunk Cloud trial, **199 of 200 sample findings were ingested; one was quarantined**.
 
-[Code, design decisions & run evidence](https://github.com/JJJJeny/security-findings-to-splunk#key-decisions)
+[Demo setup](https://github.com/JJJJeny/security-findings-to-splunk#how-to-run) · [Architecture](https://github.com/JJJJeny/security-findings-to-splunk#architecture) · [Run evidence](https://github.com/JJJJeny/security-findings-to-splunk/tree/main/evidence/splunk-exports) · [Code](https://github.com/JJJJeny/security-findings-to-splunk)
 
-## Working with
+---
 
-Python, SQL, Git/GitHub, Docker, Splunk, Figma, and AI coding tools.
-
-I'm looking for full-time product roles starting after May 2027, especially in AI platforms, developer tools, and security.
+Looking for full-time product roles after May 2027 in AI platforms, developer tools, and security.
